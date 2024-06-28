@@ -21,12 +21,16 @@ Console.WriteLine("Full date, long time: {0:F}", AprFools);
 
 
 // TODO: 'g' General date and time
+Console.WriteLine("General date and time: {0:g}", AprFools);
 
 
 // TODO: 'G' General date and time
+Console.WriteLine("General date and time: {0:G}", AprFools);
 
 
 // TODO: Format using a specific CultureInfo
+Console.WriteLine("Date in French: {0:d}", AprFools.ToString(new CultureInfo("fr-FR")));
 
 
 // TODO: Defining custom date and time formats
+Console.WriteLine("Custom date and time: {0:MM/dd/yyyy HH:mm:ss}", AprFools);

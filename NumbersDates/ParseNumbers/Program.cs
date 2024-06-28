@@ -14,4 +14,13 @@ foreach (string str in NumStrs) {
 }
 
 // TODO: The TryParse method returns 'true' if the parse is successful
+// and 'false' if it is not
+foreach (string str in NumStrs) {
+    result = int.TryParse(str, out testint);
+    if (result) {
+        Console.WriteLine($"Parsed {str} as {testint}");
+    } else {
+        Console.WriteLine($"Failed to parse {str}");
+    }
+}
 

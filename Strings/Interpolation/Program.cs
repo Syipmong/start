@@ -11,10 +11,16 @@ string c = "CSharp";
 Console.WriteLine("The values are {0}, {1} and {2}", a, b, c);
 
 // TODO: Using string interpolation, the code is much easier to read
+Console.WriteLine($"The values are {a}, {b} and {c}");
+
 
 
 // TODO: Interpolated strings can contain expressions as well
+Console.WriteLine($"The sum of {a} and {b} is {a + b}");
+
 
 
 // TODO: Complex objects can be embedded in strings this way as well
+Console.WriteLine($"The object is {new { Name = "John", Age = 25 }}");
+
 
